@@ -1,5 +1,18 @@
-function isPalindrome(word) {
+
   // Write your algorithm here
+  function isPalindrome(word) {
+    let start = 0;
+    let end = lowercaseWord.length - 1;
+  
+    while (start <= end) {
+      if (lowercaseWord[start] !== lowercaseWord[end]) {
+        return false;
+      }
+      start++;
+      end--;
+    }
+  
+    return true;
 }
 
 /* 
